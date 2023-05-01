@@ -1,0 +1,8 @@
+本次实验三个功能打包在一起，通过指定主类来运行
+选做功能1（排序）在执行时需要以基础功能的输出作为输入，需要先进行基础功能的运行。
+基础功能（倒排索引）：
+java -cp exp2.jar mapreduce.MyIndex 数据集路径 输出结果路径1
+选做功能1（排序）：
+java -cp exp2.jar mapreduce.MySort 输出结果路径1下的part-r-00000 输出结果路径2
+选做功能2（TF-IDF）：
+java -cp exp2.jar mapreduce.MyTFIDF 数据集路径 输出结果路径3
